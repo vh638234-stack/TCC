@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas - Farmácia</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/jpeg" href="CSS/img/fundo.jpg">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>💊 Farmácia</h2>
+        <a href="Estoque.html">Estoque</a>
+        <a href="Validade.html">Validade</a>
+        <a href="Pedidos.html">Pedidos</a>
+    </div>
+    
+    <div class="content">
+        <h1>Subir Receitas Médicas</h1>
+        <p>Envie receitas para validação.</p>
+    
+        <div class="card">
+            <h3>Enviar Receita</h3>
+
+            <label for="arquivoReceita" class="upload-label">
+                Escolher Arquivo
+            </label>
+            <input type="file" id="arquivoReceita" hidden>
+
+            <p id="nomeArquivo"></p>
+
+            <button id="btnUpload">Enviar</button>
+            <p id="msgUpload"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
